@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+  }
+  
+  /* PANTALLA 1 */
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+  }
+  
+  .concert-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .title {
+    position: absolute;
+    top: 15%;
+    background-color: #18161667;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .info {
+    max-width: 900px;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    padding-top: 10px;
+    width: 700px;
+  }
+  
+  .info h2 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  
+  .info p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 4px;
+  }
+  
+  /* PANTALLA 2 */
+  .eventos-preferencias {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #0f0f0f;
+    height: 450px;
+  }
+  
+  /* Sección eventos */
+  .eventos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    flex-direction: column;
+    padding: 40px;
+    max-width: 900px;
+    width: 35%;
+    border-right: 10px solid #222;
+    height: 100%;
+  }
+  
+  .eventos-texto {
+    flex: 1;
+    margin-right: 30px;
+
+  }
+  
+  .eventos-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: end;
+
+  }
+  
+  .eventos-texto p {
+    color: #ccc;
+    line-height: 1.5;
+    background-color: #1a1a1a;
+  }
+  
+  .eventos-img {
+    width: 90%;
+padding-bottom: 209px;  
+margin-left: -48px;
+}
+  
+  /* Sección preferencias */
+  .preferencias-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-left: 10px solid #222;
+
+    padding: 40px;
+    max-width: 900px;
+    width: 35%;
+    height: 100%;
+    
+  }
+  
+  .preferencias-texto {
+    flex: 1;
+    margin-left: 274px;
+
+  }
+  
+  .preferencias-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .preferencias-texto p {
+    color: #ccc;
+    line-height: 1.5;
+    background-color: #1a1a1a;
+    width:450px;
+    padding: 20px 200px 20px 176px;
+  }
+  
+  .preferencias-img {
+    width: 90%;
+  }
+  

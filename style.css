@@ -5,6 +5,7 @@ body {
     background-color: #0f0f0f;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
+    overflow-x: hidden;
   }
   
   /* PANTALLA 1 */
@@ -59,7 +60,13 @@ body {
     color: #ccc;
     margin-top: 4px;
   }
-  
+  .divisor {
+    width: 80%;
+    height: 5px;
+    margin: 50px auto;
+    background-color: #d3cbcb;
+    
+  }
   /* PANTALLA 2 */
   .eventos-preferencias {
     display: flex;
@@ -68,6 +75,8 @@ body {
     margin-top: 100px;
     background-color: #0f0f0f;
     height: 450px;
+    margin-top: 300px;
+    
   }
   
   /* Sección eventos */
@@ -78,10 +87,11 @@ body {
    
     flex-direction: column;
     padding: 40px;
+    
     max-width: 900px;
     width: 35%;
-    border-right: 10px solid #222;
-    height: 100%;
+    border-right: 10px solid #444;
+    height: 90vh;
   }
   
   .eventos-texto {
@@ -94,13 +104,19 @@ body {
     font-size: 2rem;
     margin-bottom: 15px;
     text-align: end;
-
+    margin-right: 190px;
   }
-  
+  .cuadrofondo1 {
+    background-color: #444;
+    width: 670px;
+    padding-left: 100px;
+    margin-left: -100px;
+  }
   .eventos-texto p {
     color: #ccc;
     line-height: 1.5;
-    background-color: #1a1a1a;
+    width: 450px;
+   
   }
   
   .eventos-img {
@@ -115,35 +131,109 @@ margin-left: -48px;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    border-left: 10px solid #222;
-
+    border-left: 10px solid #444;
     padding: 40px;
     max-width: 900px;
     width: 35%;
-    height: 100%;
+    height: 90vh;
+    
     
   }
   
   .preferencias-texto {
     flex: 1;
-    margin-left: 274px;
+    
 
   }
   
   .preferencias-texto h2 {
     font-size: 2rem;
     margin-bottom: 15px;
+    margin-left: 180px  ;
   }
   
   .preferencias-texto p {
     color: #ccc;
     line-height: 1.5;
-    background-color: #1a1a1a;
-    width:450px;
-    padding: 20px 200px 20px 176px;
+    background-color: #444444;
+    width: 450px;
+    margin-left: 77px;
+    
   }
-  
+  .cuadradofondo {
+    background-color: #444;
+    width: 732px;
+    margin-left: 91px;
+    display: flex;
+    align-items: center;
+      
+    height: 150px;
+  }
   .preferencias-img {
     width: 90%;
   }
+  .habilidades-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  color: white;
+  border-top: 5px solid #111; /* similar a la barra negra de arriba */
   
+}
+
+.habilidades-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  align-items: center;
+ margin-left: 50px;
+  gap: 60px;
+  border-left: 10px solid #111; /* línea negra vertical del medio */
+  padding-left: 40px;
+}
+
+.icono-habilidad img {
+  width: 400px; /* tamaño del icono */
+  height: auto;
+  filter: drop-shadow(0 0 5px #6a7afc); /* para efecto luminoso si quieres */
+}
+
+.habilidades-texto {
+  flex: 1;
+}
+
+.habilidades-texto h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.habilidad-item {
+  margin-bottom: 20px;
+}
+
+.habilidad-item strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+
+.habilidad-item p {
+  font-weight: 300;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Barra negra horizontal arriba */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px; /* ajusta si quieres barra más gruesa */
+  background-color: #111;
+  z-index: 9999;
+}

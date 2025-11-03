@@ -237,3 +237,72 @@ body::before {
   background-color: #111;
   z-index: 9999;
 }
+/* --- PANTALLA 3: CONTACTO --- */
+.contacto-container {
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contacto-titulo {
+  font-size: 1.8rem;
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  border-radius: 6px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.contacto-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+/* Imagen */
+.contacto-img-box {
+  flex: 1;
+}
+
+.contacto-img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Datos */
+.contacto-datos {
+  flex: 0.7;
+  text-align: left;
+}
+
+.contacto-datos p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacto-datos strong {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.contacto-datos a {
+  color: #9dc0ff;
+  text-decoration: none;
+}
+
+.contacto-datos a:hover {
+  text-decoration: underline;
+}

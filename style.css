@@ -194,9 +194,10 @@ margin-left: -48px;
 }
 
 .icono-habilidad img {
-  width: 400px; /* tamaño del icono */
+  width: 420px; /* tamaño del icono */
   height: auto;
-  filter: drop-shadow(0 0 5px #6a7afc); /* para efecto luminoso si quieres */
+  position: relative;
+  left: -120px;
 }
 
 .habilidades-texto {
